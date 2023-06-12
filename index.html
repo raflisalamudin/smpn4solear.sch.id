@@ -6,6 +6,7 @@
     <title>SMPN 4 Solear</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   </head>
   <body>
     <!-- navbar start -->
@@ -72,7 +73,7 @@
     <!-- navbar end -->
 
     <!-- hero start -->
-    <section id="hero" class="bg-warning-subtle py-4">
+    <section id="hero" class="bg-warning-subtle py-4" >
       <div class="container py-3">
         <div class="row">
           <div class="col-lg-6 m-auto">
@@ -89,11 +90,11 @@
 
     <!-- sambutan start -->
     <section id="sambutan" class="py-5">
-        <div class="container py-3 fw-bold"><h3>Sambutan</h3></div>
+        <div class="container py-3 fw-bold" data-aos="fade-up"><h3>Sambutan</h3></div>
         <div class="container">
             <div class="row">
-                <div class="col-lg-4"><img src="img/avatar-kepsek.png" alt="foto kepala sekolah" class="w-100 rounded-2"></div>
-                <div class="col-lg-8">
+                <div class="col-lg-4" data-aos="fade-right"><img src="img/avatar-kepsek.png" alt="foto kepala sekolah" class="w-100 rounded-2"></div>
+                <div class="col-lg-8" data-aos="fade-left">
                     <h5 class="fw-medium my-3 mt-lg-0">Kepala Sekolah</h5>
                     <h3 class="fw-bold">Isum Sumyati</h3>
                     <div>
@@ -101,7 +102,6 @@
                         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iusto voluptas sed necessitatibus similique, quidem, nam facilis beatae odio placeat vel aut tenetur libero veniam animi.</p>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum sed ex possimus, tenetur quo a nulla accusantium id repudiandae expedita.</p>
                     </div>
-                    
                 </div>
             </div>
         </div>
@@ -110,14 +110,14 @@
 
     <!-- fitur start -->
     <section id="fitur" class="pt-5">
-        <div class="container text-center">
+        <div class="container text-center" data-aos="fade-up">
             <h4 class="fw-semibold">PENDIDIKAN YANG BAIK UNTUK MASA DEPAN YANG BAIK</h4>
             <h6 class="fw-normal">Kami membantu siswa mengembangkan potensi untuk dirinya di masa depan</h6>
             <hr class="border border-warning opacity-75 mb-5">
         </div>
         <div class="container">
             <div class="row row-cols-1 row-cols-lg-4 g-3 g-lg-4">
-              <div class="col">
+              <div class="col" data-aos="flip-left">
                 <div class="card p-5 p-lg-3 shadow">
                     <div class="ms-3 mt-3 text-info">
                         <i class="fa-solid fa-book-quran fa-2x border border-info rounded-circle p-3"></i>
@@ -128,7 +128,7 @@
                     </div>
                 </div>
               </div>
-              <div class="col">
+              <div class="col" data-aos="flip-left">
                 <div class="card p-5 p-lg-3 shadow">
                     <div class="ms-3 mt-3 text-info">
                         <i class="fa-solid fa-computer fa-2x border border-info rounded-circle p-3"></i>
@@ -139,7 +139,7 @@
                     </div>
                 </div>
               </div>
-              <div class="col">
+              <div class="col" data-aos="flip-right">
                 <div class="card p-5 p-lg-3 shadow">
                     <div class="ms-3 mt-3 text-info">
                         <i class="fa-solid fa-person-military-to-person fa-2x border border-info rounded-circle p-3"></i>
@@ -150,7 +150,7 @@
                     </div>
                 </div>
               </div>
-              <div class="col">
+              <div class="col" data-aos="flip-right">
                 <div class="card p-5 p-lg-3 shadow">
                     <div class="ms-3 mt-3 text-info">
                         <i class="fa-solid fa-burger fa-2x border border-info rounded-circle p-3"></i>
@@ -174,8 +174,7 @@
           <div class="col">
             <div class="p-3"></div>
           </div>
-          <div class="col">
-            <div class="">
+          <div class="col" data-aos="flip-up">
               <div class="card p-5 p-lg-3 shadow">
                 <div class="text-info">
                   <img src="img/jumlah-siswa.png" alt="siswa" class="w-50">
@@ -185,10 +184,8 @@
                   <p class="card-text">Jumlah Siswa</p>
                 </div>
               </div>
-            </div>
           </div>
-          <div class="col">
-            <div class="">
+          <div class="col" data-aos="flip-up">
               <div class="card p-5 p-lg-3 shadow">
                 <div class="text-info">
                   <img src="img/jumlah-guru.png" alt="siswa" class="w-75">
@@ -198,10 +195,8 @@
                   <p class="card-text">Jumlah Guru</p>
                 </div>
               </div>
-            </div>
           </div>
-          <div class="col">
-            <div class="">
+          <div class="col" data-aos="flip-up">
               <div class="card p-5 p-lg-3 shadow">
                 <div class="text-info">
                   <img src="img/jumlah-ruang-kelas.png" alt="siswa" class="w-50">
@@ -212,7 +207,6 @@
                   <p class="card-text d-none d-lg-block">Jumlah Rombel</p>
                 </div>
               </div>
-            </div>
           </div>
           <div class="col">
             <div class="p-3"></div>
@@ -223,12 +217,12 @@
     <!-- jumlah end -->
 
     <!-- berita start -->
-    <section id="berita" class="py-5">
+    <section id="berita" class="py-5" data-aos="fade-up">
       <div class="container text-center">
         <h4 class="fw-semibold">BERITA TERBARU</h4>
         <hr class="border border-warning opacity-75 w-25 mb-5 mx-auto">
       </div>
-      <div class="container">
+      <div class="container" data-aos="fade-up">
         <div class="row row-cols-1 row-cols-lg-3 g-3 g-lg-4">
           <div class="col">
             <div class="card">
@@ -359,5 +353,11 @@
     <!-- footer end -->
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 1500,
+      });
+    </script>
   </body>
 </html>

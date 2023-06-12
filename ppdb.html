@@ -7,6 +7,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.12/dist/sweetalert2.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   </head>
   <body>
     <!-- navbar start -->
@@ -74,7 +75,7 @@
 
     <!-- hero start -->
     <section id="hero" class="bg-primary text-white pb-5 border-bottom border-5 border-light opacity-100">
-      <div class="container text-center">
+      <div class="container text-center" data-aos="fade-down">
         <img src="img/logo.png" alt="logo" class="pt-5 pb-4">
         <h1 class="font-monospace fw-bold" style="letter-spacing: -0.1rem;">SELAMAT DATANG DI HALAMAN PPDB</h1>
         <h1 class="font-monospace fw-bold">SMPN 4 SOLEAR</h1>
@@ -87,9 +88,9 @@
     <!-- information start -->
     <section id="information" class="bg-primary text-white py-5">
       <div class="container">
-        <h2 class="text-center fw-medium">INFORMASI PPDB</h2>
-        <hr class="border border-light opacity-75 w-25 mb-4 mx-auto">
-        <div class="row" style="text-align: justify;">
+        <h2 class="text-center fw-medium" data-aos="fade-up">INFORMASI PPDB</h2>
+        <hr class="border border-light opacity-75 w-25 mb-4 mx-auto" data-aos="fade-up">
+        <div class="row" style="text-align: justify;" data-aos="zoom-in-up">
           <div class="col-lg-2"></div>
           <div class="col-lg-4">
             <p>SMPN 4 SOLEAR menyediakan PPDB secara <i>online</i> diharapkan proses PPDB dapat berjalan cepat dan bisa dilakukan dimanapun dan kapanpun selama sesi PPDB Online dibuka. Proses pendaftaran calon siswa baru di masa pandemi Covid-19 ini dan terhambat oleh jarak jika datang ke sekolah langsung, bisa mengakses website PPDB Online SMPN 4 SOLEAR.</p>
@@ -106,9 +107,9 @@
     <!-- syarat pendaftaran start -->
     <section id="syarat" class="py-5">
       <div class="container">
-        <h2 class="text-center fw-medium">SYARAT PENDAFTARAN</h2>
-        <hr class="border border-primary opacity-75 w-25 mb-4 mx-auto">
-        <ul class="list-group list-group-item-secondary">
+        <h2 class="text-center fw-medium" data-aos="fade-up">SYARAT PENDAFTARAN</h2>
+        <hr class="border border-primary opacity-75 w-25 mb-4 mx-auto" data-aos="fade-up">
+        <ul class="list-group list-group-item-secondary" data-aos="zoom-in-up">
           <li class="list-group-item"><i class="fa-solid fa-check text-success"></i>&nbsp; Foto Copy Kartu Keluarga (KK).</li>
           <li class="list-group-item"><i class="fa-solid fa-check text-success"></i>&nbsp; Surat Keterangan Lulus SD (Asli)</li>
           <li class="list-group-item"><i class="fa-solid fa-check text-success"></i>&nbsp; Sertifikat Hasil Ujian Nasional SD (Asli) / Foto Copy Dakolnem.</li>
@@ -121,10 +122,10 @@
     <!-- form pendaftaran start -->
     <section id="daftar" class="py-5 bg-body-secondary">
       <div class="container">
-        <h2 class="text-center fw-medium">FORM PENDAFTARAN PPDB</h2>
+        <h2 class="text-center fw-medium" data-aos="fade-down">FORM PENDAFTARAN PPDB</h2>
         <hr class="border border-primary opacity-75 w-25 mb-4 mx-auto">
 
-        <div class="row justify-content-center">
+        <div class="row justify-content-center" data-aos="fade-up">
           <div class="col-md-6">
 
             <form name="ppdb-form" class="bg-white p-5 rounded-4">
@@ -274,8 +275,14 @@
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
-
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.12/dist/sweetalert2.all.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script>
+      AOS.init({
+        duration: 1500,
+      });
+    </script>
   
     <!--  -->
     <script>
@@ -311,5 +318,6 @@
           .catch(error => console.error('Error!', error.message))
       })
     </script>
+
   </body>
 </html>
